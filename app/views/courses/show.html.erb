@@ -1,0 +1,122 @@
+<div class="content_wrapper">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPIGOhcHPRs84IEnEiVqwEQFmEZ0AkEv8&libraries=places&callback=initMap2"
+      async defer></script>
+  <br/>
+
+  <% unless @course.photos.blank? %>
+    <% @course.photos.each  do | photo | %>
+      <% #  = link_to image_tag( photo, class: "course_image_box"), course %>
+      <br/>
+    <% end %>
+  <% end %>
+
+
+  <p id="notice"><%= notice %></p>
+
+
+    <h1><%= @course.course_name.name %></h1>
+    <div id="course_wrap_show">
+      <div class="card_course_name">
+
+      </div>
+      <div class="card_block_show">
+        <% unless @course.avatar_url.blank? %>
+          <%= image_tag(@course.avatar.avatar, class: "course_image_box") %>
+        <% else %>
+          <%= link_to image_tag("/site_images/no-image.png", alt: "No Image", height:"200px",class: "course_image_box"),@course %>
+        <% end %>
+      </div>
+      <div class="card_block_show">
+        Provider:<%= @course.provider.name %>
+        <br/>
+        Availability: <%= @course.availability %>
+        <br/>
+        start_date: <%= @course.start_date.strftime("%b/%d/%Y") %>
+        <br/>
+        end_date: <%= @course.end_date %>
+      </div>
+      <div class="card_block_show">
+        Price: <%= number_to_currency(@course.price) %>
+        <br/>
+        City: <%= @course.city %>
+        <br/>
+        Province: <%= @course.province %>
+        <br/>
+        <% if can? :update, @course %>
+          <%= link_to 'Edit', edit_course_path(@course) %>
+        <% end %>
+        <br/>
+        <% if can? :destroy, @course %>
+          <%= link_to 'Destroy', @course, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% end %>
+      </div>
+      <hr>
+      <h1>Address</h1>
+      <input type="hidden" id="course[latitude]" value="<%= @course.latitude %>">
+      <input type="hidden" id="course[longitude]" value="<%= @course.longitude %>">
+
+      <p>
+        <strong>Address line 1:</strong>
+        <%= @course.address_line_1 %>
+      </p>
+
+      <p>
+        <strong>Address line 2:</strong>
+        <%= @course.address_line_2 %>
+      </p>
+
+      <p>
+        <strong>Postal code:</strong>
+        <%= @course.postal_code %>
+      </p>
+
+      <p>
+        <strong>Provider:</strong>
+        <%= @course.provider_id %>
+      </p>
+
+      <p>
+        <strong>Latitude:</strong>
+        <%= @course.latitude %>
+      </p>
+
+      <p>
+        <strong>Longitude:</strong>
+        <%= @course.longitude %>
+      </p>
+
+      <hr>
+      <h1>Description</h1>
+      It's cool
+      <hr>
+        <div id="map" ></div>
+        <div id="infowindow-content">
+          <img src="" width="16" height="16" id="place-icon">
+          <span id="place-name"  class="title"></span><br>
+          <span id="place-address"></span>
+        </div>
+      <hr>
+    <div style="text-align:center;">
+      <% if can? :buy, @course %>
+        <div class="call_to_action">
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#purchase_modal">
+            <%= t('course.purchase-call-to-action') %>
+          </button>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+  <% if can? :update, @course %>
+    <%= link_to 'Edit', edit_course_path(@course) %> |
+  <% end %>
+  <%= link_to 'Back', courses_path %>
+  <br/>
+
+
+  <% if can? :buy, @course %>
+      <% content_for :modals do %>
+          <%= render 'purchase_modal' %>
+      <% end %>
+  <% end %>
+</div>

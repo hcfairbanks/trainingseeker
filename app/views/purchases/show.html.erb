@@ -1,0 +1,42 @@
+<div class="content_wrapper">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Course:</strong>
+    <%= @purchase.course.course_name.try(:name) || @purchase.course_id %>
+  </p>
+
+  <p>
+    <strong>Status:</strong>
+    <%= @purchase.status %>
+  </p>
+
+  <% if @purchase.status == 'succeeded' %>
+    <p>
+      <strong>Transaction ID:</strong>
+      <%= @purchase.response_id %>
+    </p>
+  <% end %>
+
+  <p>
+    <strong>Number of Seats:</strong>
+    <%= @purchase.number_of_seats %>
+  </p>
+
+  <p>
+    <strong>Seats:</strong>
+    <ol>
+      <% @purchase.seats.each do |seat| %>
+        <li><%= display_seat(seat) %></li>
+      <% end %>
+    </ol>
+  </p>
+
+
+  <p>
+    <strong>Price:</strong>
+    <%= number_to_currency(@purchase.number_of_seats) %>
+  </p>
+
+  <%= link_to 'Back', purchases_path %>
+</div>

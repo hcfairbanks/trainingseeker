@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TrainingSeeker</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="shortcut icon" href="/site_images/icon32.ico" type="image/x-icon">
+  </head>
+  <body style="background-color: white;">
+    <%= content_for :modals %>
+
+    <div class="container" style="padding:0px;width:100%;background-color:white;margin-bottom:100px;">
+    <% if current_user %>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <a class="navbar-brand" style="color:#0032a1;" href="/home"><img src="/site_images/icon_float.png" style="display:inline;height:130%;top:-10%;">TrainingSeeker</a>
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <% if can? :index, User %>
+                <li class="active" ><%= link_to "Users", users_path %></li>
+              <% end %>
+              <% if can? :index, Provider %>
+                <li><%= link_to "Providers", providers_path %></li>
+              <% end %>
+              <% if can? :index, Purchase %>
+                <li><%= link_to "Purchases", purchases_path %></li>
+              <% end %>
+                <% if current_user.is_provider_agent? %>
+                <li><%= link_to "Edit Provider", edit_provider_path(current_user.provider.id) %></li>
+                <% end %>
+                <li><%= link_to "Edit Profile", edit_user_path(current_user.id) %></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li ><%= link_to "Course Listing", courses_path %></li>
+                  <% if can? :index, CourseName %>
+                    <li><%= link_to "Course Names", course_names_path %></li>
+                  <% end %>
+                  <% if can? :index, CourseAlias %>
+                    <li><%= link_to "Course Aliases", course_aliases_path %></li>
+                  <% end %>
+                  <% if can? :create, Course %>
+                    <li><%= link_to "New Course", new_course_path %></li>
+                  <% end %>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><%= link_to('Logout', destroy_user_session_path, method: :delete) %></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    <% else %>
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:white;">
+      <a class="navbar-brand" style="color:#0032a1;" href="/home"><img src="/site_images/icon_float.png" style="display:inline;height:130%;top:-10%;">TrainingSeeker</a>
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/partners">Partners</a></li>
+            <li><a href="/providerfaq">Provider FAQ</a></li>
+            <li><a href="/try_the_beta">Try the Beta</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><%= link_to('Login', user_session_path, method: :get) %></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <% end %>
+      <div style="background-color:white;"><%= yield %></div>
+    </div>
+    <footer>
+      <div>TrainingSeeker Inc. © 2017</div>
+      <div>
+        <%= link_to('Home','/home', class:'footer_links')  %> *
+        <%= link_to('About us','/aboutus', class:'footer_links')  %> *
+        <%= link_to('Partners','/partners', class:'footer_links') %> *
+        <%= link_to('Provider FAQ','/providerfaq', class:'footer_links') %> *
+        <%= link_to('Try the Beta','/try_the_beta', class:'footer_links') %> *
+        <%= link_to('Opportunities','/opportunities', class:'footer_links') %> *
+        <%= link_to('Contact','/contact', class:'footer_links') %>
+      </div>
+      <%= link_to "https://www.facebook.com/trainingseeker/",target:"_blank" do
+          image_tag("/site_images/icons/facebook_gray.png",alt:"On facebook", onmouseover: "this.src='#{asset_path("/site_images/icons/facebook_color.png")}'", onmouseout: "this.src='#{asset_path("/site_images/icons/facebook_gray.png")}'")
+      end %>
+      <%= link_to "https://twitter.com/trainingseeker",target:"_blank" do
+          image_tag("/site_images/icons/twitter_gray.png",alt:"On twitter", onmouseover: "this.src='#{asset_path("/site_images/icons/twitter_color.png")}'", onmouseout: "this.src='#{asset_path("/site_images/icons/twitter_gray.png")}'")
+      end %>
+      <%= link_to "https://www.linkedin.com/company/trainingseeker",target:"_blank" do
+          image_tag("/site_images/icons/linkedin_gray.png",alt:"On linkedin", onmouseover: "this.src='#{asset_path("/site_images/icons/linkedin_color.png")}'", onmouseout: "this.src='#{asset_path("/site_images/icons/linkedin_gray.png")}'")
+      end %>
+      <%= link_to "https://plus.google.com/107231071754424869173",target:"_blank" do
+          image_tag("/site_images/icons/google_plus_gray.png",alt:"On google plus", onmouseover: "this.src='#{asset_path("/site_images/icons/google_plus_color.png")}'", onmouseout: "this.src='#{asset_path("/site_images/icons/google_plus_gray.png")}'")
+      end %>
+    </footer>
+  </body>
+</html>

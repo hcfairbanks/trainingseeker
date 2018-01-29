@@ -1,0 +1,11 @@
+<div class="content_wrapper">
+  <h1>New User</h1>
+
+  <%= render 'form' %>
+
+  <% if !current_user %>
+    <%= link_to 'Back', users_path %>
+  <% else %>
+    <%= link_to 'Back', new_user_session_path %>
+  <% end %>
+</div>

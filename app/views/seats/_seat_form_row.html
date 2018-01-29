@@ -1,0 +1,30 @@
+<script id="template_seat_form_row" type="text/template">
+  <div class="seat_row row">
+	  <div class="seat_name col-md-6 row">
+		  <span class="seat_first col-md-4">
+              <input class="form-control" placeholder="First" type="text" name="purchase[seats_attributes][{{idx}}][first_name]" id="purchase_seats_attributes_{{idx}}_first_name">
+		  </span>
+		  <span class="seat_middle col-md-4">
+              <input class="form-control" placeholder="Middle" type="text" name="purchase[seats_attributes][{{idx}}][middle_name]" id="purchase_seats_attributes_{{idx}}_middle_name">
+		  </span>
+		  <span class="seat_last col-md-4">
+              <input class="form-control" placeholder="Last" type="text" name="purchase[seats_attributes][{{idx}}][last_name]" id="purchase_seats_attributes_{{idx}}_last_name">
+		  </span>
+	  </div>
+
+      <div class="seat_contact col-md-5 row">
+          <span class="seat_email col-md-6">
+              <input class="form-control" placeholder="Email" type="text" name="purchase[seats_attributes][{{idx}}][email]" id="purchase_seats_attributes_{{idx}}_email">
+          </span>
+          <span class="seat_phone col-md-6">
+              <input class="form-control" placeholder="Phone" type="text" name="purchase[seats_attributes][{{idx}}][phone]" id="purchase_seats_attributes_{{idx}}_phone">
+          </span>
+      </div>
+
+      <div class="delete_seat col-md-1">
+          <button type="button" aria-label="Delete">
+              <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+  </div>
+</script>

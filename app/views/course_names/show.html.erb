@@ -1,0 +1,11 @@
+<div class="content_wrapper">
+  <br/>
+  <p id="notice"><%= notice %></p>
+  <p>
+    <strong>Name:</strong>
+    <%= @course_name.name %>
+  </p>
+
+  <%= link_to 'Edit', edit_course_name_path(@course_name) %> |
+  <%= link_to 'Back', course_names_path %>
+</divs>

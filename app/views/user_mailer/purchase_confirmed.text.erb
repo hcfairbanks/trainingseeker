@@ -1,0 +1,7 @@
+Your purchase for the course <%= @course_name %> is confirmed.
+You have been charged <%= number_to_currency(@purchase.price) %> for <%= pluralize(@purchase.number_of_seats, 'seat') %>.
+
+Seats purchased:
+<% @purchase.seats.each_with_index do |seat, idx| %>
+  <%= idx %>. <%= display_seat(seat) %>
+<% end %>

@@ -1,0 +1,61 @@
+<div class="content_wrapper">
+  <br/>
+  <p id="notice"><%= notice %></p>
+
+  <% unless @user.avatar.blank? %>
+    <%= image_tag((@user.avatar.avatar),alt:"No Image", height:"100px") %>
+  <% else %>
+    <img src="/images/no-image.png" alt="No Image" height="50px" >
+  <% end %>
+
+  <p>
+    <strong>First Name:</strong>
+    <%= @user.first_name %>
+  </p>
+
+  <p>
+    <strong>Last Name:</strong>
+    <%= @user.last_name %>
+  </p>
+
+  <p>
+    <strong>DOB:</strong>
+    <%= @user.dob %>
+  </p>
+
+  <p>
+    <strong>Provider:</strong>
+    <% #= @user.provider.name %>
+  </p>
+
+
+  <p>
+    <strong>Email:</strong>
+    <%= @user.email %>
+  </p>
+
+  <p>
+    <strong>City:</strong>
+    <%= @user.city %>
+  </p>
+
+  <p>
+    <strong>Province:</strong>
+    <%= @user.province %>
+  </p>
+
+  <p>
+    <strong>Role:</strong>
+    <%= @user.role.name %>
+  </p>
+  <p>
+    <strong>ID:</strong>
+    <%= @user.id %>
+  </p>
+
+  <%= link_to 'Edit', edit_user_path(@user.id) %>
+
+  <% if can? :index, :user %>
+  | <%= link_to 'Back', users_path %>
+  <% end %>
+</div>

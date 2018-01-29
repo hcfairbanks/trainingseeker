@@ -1,0 +1,17 @@
+<div class="content_wrapper">
+  <h1>Editing User</h1>
+  <% unless @user.avatar_url.blank? %>
+    <%= image_tag(@user.avatar.thumb) %>
+  <% else %>
+    <img src="/site_images/no-image.png" alt="No Image" height="50px" >
+  <% end %>
+  <br/>
+  <%= render 'form' %>
+  <%= link_to 'Show', @user %>
+  <% if can? :index, :user %>
+  | <%= link_to 'Back', users_path %>
+  <% end %>
+  <br/>
+  <br/>
+  <%= link_to 'Delete Account', @user, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>

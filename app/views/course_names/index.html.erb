@@ -1,0 +1,35 @@
+<div class="content_wrapper">
+  <p id="notice"><%= notice %></p>
+
+  <h1>Course Names</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Course Name ID</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @course_names.each do |course_name| %>
+        <tr>
+          <td><%= course_name.name %></td>
+          <td><%= course_name.id %></td>
+          <td><%= link_to 'Show', course_name %></td>
+          <% if can? :update, course_name %>
+            <td><%= link_to 'Edit', edit_course_name_path(course_name) %></td>
+          <% end %>
+          <% if can? :destroy, course_name %>
+            <td><%= link_to 'Destroy', course_name, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Course Name', new_course_name_path %>
+</div>

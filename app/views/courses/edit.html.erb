@@ -1,0 +1,17 @@
+<div class="content_wrapper">
+  <h1>Editing Course</h1>
+
+  <%= render 'form', course: @course %>
+
+  <%= link_to 'Show', @course %> |
+  <%= link_to 'Back', courses_path %>
+
+  <div id="infowindow-content">
+    <img src="" width="16" height="16" id="place-icon">
+    <span id="place-name"  class="title"></span><br>
+    <span id="place-address"></span>
+  </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPIGOhcHPRs84IEnEiVqwEQFmEZ0AkEv8&libraries=places&callback=initMap1"
+      async defer></script>
+  <br/>
+</div>

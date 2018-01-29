@@ -1,0 +1,33 @@
+<div class="content_wrapper">
+  <div>
+    <div id="placards">
+    <p id="notice"><%= notice %></p>
+
+    <h1>Providers</h1>
+    <br>
+    <%= link_to 'New Provider', new_provider_path %>
+    <br/>
+    <% @providers.each do |provider| %>
+    <div class="community_card">
+          <% unless provider.avatar_url.blank? %>
+            <% # = link_to image_tag("/site_images/no-image.png", alt: "No Image", style:"width:100%;"), provider%>
+            <%= image_tag(provider.avatar.avatar,style:"width:100%;") %>
+          <% else %>
+            <%= link_to image_tag("/site_images/no-image.png", alt: "No Image", style:"width:100%;"), provider%>
+          <% end %>
+        <br/>
+        <%= provider.name.truncate(20) %>  <br/>
+        <%= link_to 'Show', provider %>  <br/>
+        <% if can? :edit, provider %>
+        <%= link_to 'Edit', edit_provider_path(provider) %>    <br/>
+        <%= link_to 'Destroy', provider, method: :delete, data: { confirm: 'Are you sure?' } %>    <br/>
+        <% end %>
+    <br/>
+    </div>
+    <% end %>
+    <div class="digg_pagination" >
+      <%= will_paginate @providers %>
+    </div>
+    </div>
+  </div>
+</div>

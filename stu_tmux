@@ -1,0 +1,15 @@
+tmux kill-session -t trainingseeker
+tmux new-session -s trainingseeker -n server -d
+tmux send-keys -t trainingseeker 'cd ~/code/trainingseeker_0' C-m
+tmux send-keys -t trainingseeker 'kill -9 `cat tmp/pids/server.pid`' C-m
+tmux send-keys -t trainingseeker 'RECAPTCHA_SITE_KEY=6LfQChYUAAAAABRFM-E6q0030o8KmN8u7kl8Mks0 RECAPTCHA_SECRET_KEY=6LfQChYUAAAAAGYOhw8fWUT3x5oxnoFuwp5k3Wdx bundle exec rails s' C-m
+tmux new-window -n console -t trainingseeker
+tmux send-keys -t trainingseeker:2 'cd ~/code/trainingseeker_0' C-m
+tmux send-keys -t trainingseeker:2 'bundle exec rails c' C-m
+tmux new-window -n sidekiq -t trainingseeker
+tmux send-keys -t trainingseeker:3 'cd ~/code/trainingseeker_0' C-m
+tmux send-keys -t trainingseeker:3 'bundle exec sidekiq -q default -q mailers' C-m
+tmux new-window -n vim -t trainingseeker
+tmux send-keys -t trainingseeker:4 'cd ~/code/trainingseeker_0' C-m
+tmux send-keys -t trainingseeker:4 'vim -N' C-m
+tmux attach -t trainingseeker

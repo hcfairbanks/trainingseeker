@@ -1,0 +1,74 @@
+  <%= form_for @user,url: @direction, html: { multipart: true } do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :avatar %><br>
+    <%= f.file_field :avatar %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.password_field :password %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br>
+    <%= f.password_field :password_confirmation %>
+  </div>
+
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+
+
+
+  <% if can? :assign_provider, @user %>
+      <div class="field">
+        <%= f.label :provider %><br>
+        <%= f.collection_select(:provider_id, Provider.all, :id, :name,{include_hidden: false}, {style:"width: 10%; display:block;", class: 'en', multiple: false}) %>
+      </div>
+  <% end %>
+
+
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :province %><br>
+    <%= f.text_field :province %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email,type: "email" %>
+  </div>
+
+  <% if can? :assign_role, @user %>
+    <div class="field">
+      <%= f.label :roles %><br />
+      <%= f.collection_select(:role_id, @current_user.assignable_roles, :id, :name, {}, {style:"width: 10%; display:block;"}) %>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :dob %><br />
+    <%= f.text_field :dob, type: :date %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Submit"%>
+  </div>
+
+<% end %>

@@ -1,0 +1,92 @@
+<%= form_for(provider) do |f| %>
+  <% if provider.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(provider.errors.count, "error") %> prohibited this provider from being saved:</h2>
+
+      <ul>
+      <% provider.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone_number %>
+    <%= f.text_field :phone_number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :city %>
+    <%= f.text_field :city %>
+  </div>
+
+  <div class="field">
+    <%= f.label :province_state %>
+    <%= f.text_field :province_state %>
+  </div>
+
+  <div class="field">
+    <%= f.label :postal_code %>
+    <%= f.text_field :postal_code %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address_line_1 %>
+    <%= f.text_field :address_line_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address_line_2 %>
+    <%= f.text_field :address_line_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :avatar %><br>
+    <%= f.file_field :avatar %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pic %><br>
+    <% # f.file_field :pic, multiple: true, name: "post[photos_attributes][][pic]", :onchange => "preview(this);" %>
+    <%= f.file_field :pic, name: "provider[photos_attributes][][pic]", :onchange => "preview(this);" %>
+  </div>
+
+<table>
+  <tr>
+    <th>Merchant Id</th>
+    <th>API Key</th>
+    <th>% Type</th>
+    <th>Remove Key</th>
+  </tr>
+  <%= f.fields_for :provider_accounts, @provider.provider_accounts do | f_provider_account | %>
+  <tr>
+          <%= f_provider_account.hidden_field :id %>
+      <td><%= f_provider_account.text_field :merchant_id,placeholder:"Merchant ID",style:"width:100px;" %></td>
+      <td><%= f_provider_account.text_field :api_key, placeholder:"API Key",style:"width:300px;" %></td>
+      <td><%= f_provider_account.select :discount_type, options_for_select( [
+             ["Regular","regular"],
+             ["Discounted","discounted"],
+         ],selected: f_provider_account.object.discount_type ||  f_provider_account.options[:child_index],readonly:"true" ), include_blank: "---" %></td>
+      <td style="text-align:center;"><%= f_provider_account.check_box :_destroy %></td>
+  </tr>
+     <% end %>
+</table>
+
+
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,66 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+# For overwritting default rails erros
+# http://guides.rubyonrails.org/i18n.html#error-message-interpolation
+# http://www.rubydoc.info/github/binarylogic/authlogic/Authlogic/I18n
+# https://github.com/thoughtbot/paperclip-i18n
+# gem 'paperclip-i18n'
+# Or copy over the relevant .yml files into your repo.
+# translations are done this way because word order in other languages is unpredictable
+
+en:
+  hello: "Hello world"
+  comment: "Comment"
+  post: "Post"
+  sys_admin:  "Please see your system admin."
+  applications:
+    access-denied: "Sorry, you are not allowed to access that page."
+  comment:
+    successfully-created: "Comment was successfully created."
+    not-successfully-created: "Comment was not created."
+    successfully-updated: "Comment was successfully updated."
+    not-successfully-updated: "Comment was not updated."
+    successfully-destroyed: "Comment was successfully destroyed."
+    not-successfully-destroyed: "Comment was not destroyed."
+  post:
+    successfully-created: "Post was successfully created."
+    successfully-updated: "Post was successfully updated."
+    successfully-destroyed: "Post was successfully destroyed."
+    not-successfully-destroyed: "Post was not destroyed."
+  user:
+    successfully-created: "User was successfully created."
+    successfully-updated: "User was successfully updated."
+    successfully-destroyed: "Your account and all associated files have been deleted"
+    not-successfully-destroyed: "Something went wrong."
+    successfully-approved: "User has been approved."
+  course:
+    purchase-call-to-action: "Buy Now"
+    purchase-cancel: "Cancel"
+  user_session:
+    successfully-loggedin: "User was successfully logged in."
+    successfully-loggedout: "User was successfully logged out."
+  activerecord:
+    errors:
+      models:
+        post:
+          attributes:
+            price:
+              not_a_number: "not a currency value"

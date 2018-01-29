@@ -1,0 +1,347 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.content_wrapper {
+      background-color: white;
+      width:100%;
+      padding-left:15%;
+      padding-right:15%;
+      padding-top:10%;
+  }
+
+  .content_logo{
+    display:none;
+  }
+
+  @media screen and (min-width: 900px) {
+    .content_logo{
+      display:inline;
+      height:100px;
+      top:-10%;
+    }
+    .content_wrapper {
+        background-color: white;
+        width:100%;
+        padding-left:15%;
+        padding-right:15%;
+        padding-top:3%;
+    }
+  }
+
+.headertext {
+  color: white;
+  font-size: 40px;
+  padding-top: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+}
+.parallax {
+    /* The image used */
+    background-image: url("/site_images/mainBanner.jpg");
+    /* Set a specific height */
+    height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax_2 {
+    /* The image used */
+    background-image: url("/site_images/studyroom.jpg");
+    /* Set a specific height */
+    height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top_header{
+  margin-top:2%;
+  margin-bottom:12%;
+  text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+  .top_header{
+    margin-top:2%;
+    margin-bottom:4%;
+    text-align: center;
+  }
+  .headertext {
+    color: white;
+    font-size: 50px;
+    padding-top: 12%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+  }
+  .parallax {
+      /* The image used */
+      background-image: url("/site_images/mainBanner.jpg");
+      /* Set a specific height */
+      height: 600px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .parallax_2 {
+      /* The image used */
+      background-image: url("/site_images/studyroom.jpg");
+      /* Set a specific height */
+      height: 300px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+
+}
+
+
+
+
+.standard-button, .navbar-register-button {
+    background-color: rgba(255,162,0,1.00);
+    background-image: url(images/tr-btn.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+.button {
+    background-color: rgba(255,162,0,1.00);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: rgba(255,162,0,1.00);
+    color: black;
+    border: 2px solid white;
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid rgba(255,162,0,1.00);
+}
+.pic-container-inner {
+    display: inline-block;
+    overflow: hidden;
+    width: 81px;
+    height: 81px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background-color: #fafafa;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 0 0 1px rgba(255,162,0,1.00);
+    box-shadow: 0 0 0 1px rgba(255,162,0,1.00);
+}
+
+.pic-container {
+    position: absolute;
+    top: -40px;
+    width: 100%;
+}
+
+.block_border{
+  border: 1px solid #eaeaea;
+  border-bottom: 4px solid #eaeaea;
+  /*text-align: center;
+  padding:0px 2px 0px 2px;*/
+}
+.block_border:hover{
+  border: 1px solid #eaeaea;
+  border-bottom: 4px solid rgba(255,162,0,1.00);
+  /*text-align: center;
+  padding:0px 2px 0px 2px;*/
+}
+
+
+
+.partners_header{
+  padding-top: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+
+.orange_line{
+  display: block;
+  width: 80px;
+  height: 2px;
+  margin: auto;
+  margin-bottom: 1%;
+  background: rgba(255,162,0,1.00);
+}
+.client-logos {
+    max-height: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.client-logos:hover {
+    max-height: 40px;
+}
+ 
+
+#logoStyle{
+  color:#0032a1;
+  text-align:center;
+  padding-top:2%;
+}
+#notStyle{
+  text-align:center;
+}
+#aboutStyle{
+  line-height:2;
+  font-size: 150%;
+  color:#939393;
+}
+#business{
+  text-align:center;
+}
+#theTeam{
+  text-align:left;
+  margin-top:5%;
+}
+
+#center{
+  text-align:center;
+}
+#markoPic{
+  width:100%;
+  color:#0032a1;
+  text-align:center;
+  padding-top:2%;
+}
+#markoImage{
+  display:inline;
+  top:-10%;
+}
+#markoDesc{
+  line-height:2;
+  font-size: 150%;
+  color:#939393;
+}
+#harryPic{
+  width:100%;
+  color:#0032a1;
+  text-align:center;
+  padding-top:2%;
+}
+#harryImage{
+  display:inline;
+  top:-10%;
+}
+#harryDesc{
+  line-height:2;
+  font-size: 150%;
+  color:#939393;
+}
+#info{
+  text-align:center;
+  padding-top:1%;
+}
+
+#betaLogo{
+  color:#0032a1;
+  text-align:center;
+  padding-top:2%;
+}
+
+.contact_form {
+      width: 300px;
+      background: #EDF0F5;
+      border: 1px solid #CACDD1 !important;
+      box-shadow: none !important;
+      border-radius: 3px;
+      font-size: 14px;
+      color: #333333;
+      margin-bottom: 8px;
+      padding: 0 0 0 5px !important;
+      outline: none;
+      vertical-align: top !important;
+      box-sizing: border-box;
+    }
+    .contact_form_height{
+      height: 28px;
+    }
+    #commentArea{
+      resize:none;
+    }
+
+#rejoice{
+  fontweight:bold;
+}
+.well block_border{
+  background-color:white;
+}
+.fa fa-child{
+  color:orange;
+}
+#picHundred{
+  height:100%;
+  width:100%;
+}
+
+.tablepress td{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  background-color: #d9edf7;
+  vertical-align: middle;
+  align:left;
+  padding:2px;
+}
+.tablepress_1 td{
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  /*background-color: white;
+  font-weight: 700;
+  vertical-align: middle;
+  align:left;
+  padding:2px;*/
+}
+.tablepress_1 tr:hover{
+    background: #f7dcdf !important;
+}
+
+.tablepress_2 td {
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  background-color: #f3f3f3;
+  vertical-align: middle;
+  align:left;
+  padding:2px;
+
+}
+#table{
+  margin:0 auto;
+  width:100%;
+}
+
+
+#providerFaq{
+  padding-top:1%;
+}

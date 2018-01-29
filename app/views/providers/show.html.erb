@@ -1,0 +1,69 @@
+<div id="providers_show" class="content_wrapper">
+  <p id="notice"><%= notice %></p>
+
+  <% unless @provider.photos.blank? %>
+    <% @provider.photos.each  do | photo | %>
+        <%= image_tag(@provider.avatar.avatar, class: "course_image_box") %>
+      <br/>
+    <% end %>
+  <% end %>
+
+  <p>
+    <strong>Name:</strong>
+    <%= @provider.name %>
+  </p>
+
+  <p>
+    <strong>Phone number:</strong>
+    <%= @provider.phone_number %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= @provider.email %>
+  </p>
+
+  <p>
+    <strong>City:</strong>
+    <%= @provider.city %>
+  </p>
+
+  <p>
+    <strong>Province state:</strong>
+    <%= @provider.province_state %>
+  </p>
+
+  <p>
+    <strong>Postal code:</strong>
+    <%= @provider.postal_code %>
+  </p>
+
+  <p>
+    <strong>Address line 1:</strong>
+    <%= @provider.address_line_1 %>
+  </p>
+
+  <p>
+    <strong>Address line 2:</strong>
+    <%= @provider.address_line_2 %>
+  </p>
+
+  <p>
+    <hr>
+    <% @provider.provider_accounts.each do | provider_account| %>
+    <b>Merchant ID:</b> <%= provider_account.merchant_id %>
+    <br/>
+    <b>API Key:</b> <%= provider_account.api_key %>
+    <br/>
+    <b>Discount Type:</b> <%= provider_account.discount_type%>
+    <hr>
+    <% end %>
+  </p>
+
+
+
+  <% @provider.avatar_url.blank? %>
+
+  <%= link_to 'Edit', edit_provider_path(@provider) %> |
+  <%= link_to 'Back', providers_path %>
+</div>

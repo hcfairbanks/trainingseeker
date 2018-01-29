@@ -1,0 +1,1 @@
+json.partial! "course_names/course_name", course_name: @course_name

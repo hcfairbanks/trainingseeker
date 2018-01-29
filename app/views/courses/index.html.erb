@@ -1,0 +1,144 @@
+<!-- <div style="display:none;" class="map_canvas"></div> -->
+
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAPIGOhcHPRs84IEnEiVqwEQFmEZ0AkEv8&amp;libraries=places"></script>
+<%= javascript_include_tag "jquery.geocomplete.js", "data-turbolinks-track" => true  %>
+
+<script>
+  $(function(){
+    $("#geocomplete").geocomplete({
+      //map: ".map_canvas",
+      details: "form",
+      types: ["geocode", "establishment"],
+    });
+
+    $("#find").click(function(){
+      alert("test");
+      $("#geocomplete").trigger("geocode");
+    });
+  });
+</script>
+
+
+
+<div id="courseIndexOne">
+  <div id="courseIndexTwo">
+    <p id="notice"><%= notice %></p>
+    <h1 id="courseCenter">Course Search</h1>
+    <div id="locationField">
+
+    </div>
+    <br/>
+
+<%= form_tag('/courses',id:'test_form', :method => "get") do %>
+    Location:
+    <input id="geocomplete" name="geocomplete" type="text"  tabindex="1"   placeholder="Enter City and Province" value="<%= params[:formatted_address] %>" />
+    <label>Viewport</label>
+      <input type="text" id="viewport" name="viewport" value="<%= params[:viewport]%>">
+    <div>
+      <input type="text" class="asd" name="formatted_address" id="formatted_address" value="<%= params[:formatted_address] %>" size="10" readonly="true"/>
+      <input type="text" class="asd" name="city" id="locality" value="<%= params[:city] %>" size="10" readonly="true"/>
+      <input type="text" class="asd" id="administrative_area_level_1" name="province" value="<%= params[:province] %>" readonly="true"/>
+      
+
+    </div>
+      <%= label_tag 'Course Name / Course Alias: ' %>
+      <%= select_tag "course_name_id", options_for_select(CourseAlias.all.map{|c| [c.course_alias, "#{c.course_name_id}:#{c.id}",  {option_id:c.id}]}.insert(0, "All"),
+        selected: @search_selection, include_blank: true ),
+          {
+            tabindex:"2",
+            id:"course_name_id",
+            style:"width: 100%; display:block;",
+            class: 'en',
+            multiple: false,
+            prompt: @prompt,
+            default: "All"
+             }
+      %><br/><br/>
+      <div id="advanced_search" style="display:<%= @adv_searched %>;">
+        <input type="hidden" id="searched" name="searched" value="<%= @searched %>">
+        <div id="hide_for_now" >
+          Provider:
+          <%= select_tag "provider_id",options_from_collection_for_select(Provider.all, "id", "name","#{@search_provider_selection}"),
+          {style:"width: 30%; display:block;", class: 'en', multiple: false, prompt:"All"} %>
+          <br/>
+        </div>
+        <table>
+          <tr>
+            <td>Start Date</td>
+            <td><input type="text" class="datepicker" tabindex="4"  id="start_date" name="start_date" value="<%= @start_date %>"></td>
+            <td>&nbsp;End Date</td>
+            <td><input type="text" class="datepicker" tabindex="5"  id="end_date" name="end_date" value="<%= @end_date %>"></td>
+          </tr>
+          <tr>
+            <td>Minimum Price:</td>
+            <td><input type="number" id="min_price" name="min_price" tabindex="6" min="0.01" step="0.01"  value="<%= number_with_precision(@min_price, precision: 2) %>"></td>
+            <td>&nbsp;Maximum Price:</td>
+            <td><input type="number" id="max_price" name="max_price" tabindex="7" min="0.01" step="0.01"  value="<%= number_with_precision(@max_price, precision: 2) %>"></td>
+          </tr>
+          <tr>
+            <td>Available Seats:</td>
+            <td><%= number_field_tag 'availability', params[:availability], tabindex:"8", style:"text-align:center;", min:"1", step:"1",value:"1" %></td>
+            <td>&nbsp;Sort by:</td>
+            <td><%= select_tag "order_by",
+                          options_for_select( [
+                            ["Latest","latest"],
+                            ["Oldest","oldest"],
+                            ["Highest Price","highest_price"],
+                            ["Lowest Price","lowest_price"]
+                        ],params[:order_by]),style:"width:200px;",tabindex:"9" %></td>
+          </tr>
+
+        </table>
+        <br/>
+      </div>
+      <button type="button" class="btn btn-primary" onclick="hide_me('advanced_search')">Advanced Search Options</button>
+      &nbsp;
+      <%= submit_tag 'Search', class:"btn btn-primary", tabindex:"10" %>
+    <% end %>
+    <br/>
+        <h1 id="courseCenter">Courses</h1>
+    <div id="courseCenter">
+        <%= page_entries_info @courses %>
+    </div>
+  </div>
+</div>
+
+<% @courses.each do |course| %>
+  <div id="course_wrap">
+    <div class="card_course_name">
+      <h4><%= course.course_name.name %></h4>
+    </div>
+    <div class="card_block">
+      <% unless course.avatar_url.blank? %>
+        <% #= link_to image_tag(File.join(root_url, "public","images", course.id.to_s, "course", "avatar", course.id.to_s,"avatar","serve_image"), class: "course_image_box"), course %>
+        <%= link_to image_tag(course.avatar.avatar, class: "course_image_box"), course %>
+      <% else %>
+        <%= link_to image_tag("/site_images/no-image.png", alt: "No Image", class: "course_image_box"),course %>
+      <% end %>
+    </div>
+    <div class="card_block">
+      Provider:<%= course.provider.name %>
+      <br/>
+      Availability: <%= course.availability %>
+      <br/>
+      start_date: <%= course.start_date.strftime("%b/%d/%Y") %>
+      <br/>
+      end_date: <%= course.end_date %>
+    </div>
+    <div class="card_block">
+      Price: <%= number_to_currency(course.price) %>
+      <br/>
+      City: <%= course.city %>
+      <br/>
+      Province: <%= course.province %>
+      <br/>
+      <%= link_to 'More Details', '/users/sign_up' %>
+      <br/>
+    </div>
+  </div>
+<br/>
+<% end %>
+
+    <div class="digg_pagination" id="digg_pagination">
+      <%= will_paginate @courses %>
+    </div>

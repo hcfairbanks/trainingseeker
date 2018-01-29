@@ -1,0 +1,30 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  username: deploy
+  password: password
+development:
+  host: localhost
+  adapter: postgresql
+  encoding: utf8
+  database: trainingseeker_development
+  pool: 5
+  username: deploy
+  password: password
+test:
+  host: localhost
+  adapter: postgresql
+  encoding: utf8
+  database: trainingseeker_test
+  pool: 5
+  username: deploy
+  password: password
+production:
+  host: <%= ENV["DB_HOST"] %>
+  adapter: postgresql
+  encoding: utf8
+  database: <%= ENV["DB_DATABASE"] %>
+  pool: 5
+  username: <%= ENV["DB_USER"] %>
+  password: <%= ENV["DB_PASSWORD"] %>

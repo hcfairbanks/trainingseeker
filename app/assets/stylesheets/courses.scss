@@ -1,0 +1,374 @@
+// Place all the styles related to the Courses controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+#course_wrap_show{
+
+  border-width: thin;
+  border-spacing: 2px;
+  border-style: solid;
+  border-color: black;
+  //height:300px;
+  background-color:white;
+  width:100%;
+  padding:1%;
+  box-shadow: 5px 5px 2px #888888;
+  margin: 0 auto;
+}
+
+.card_block_show{
+  vertical-align: top;
+  display:inline-block;
+  //width:48%;
+  //background-color:yellow;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+
+
+.course_image_box{
+  height:75px;
+  border-width: thin;
+  border-spacing: 2px;
+  border-style: solid;
+  border-color: black;
+  box-shadow: 5px 5px 2px #888888;
+}
+
+#course_wrap{ // The display & width 60% will need to change for smaller screens
+  border-width: thin;
+  border-spacing: 2px;
+  border-style: solid;
+  border-color: black;
+  background-color:white;
+  width:60%;
+  padding:1%;
+  box-shadow: 5px 5px 2px #888888;
+  margin: 0 auto;
+}
+
+
+// @media screen and (min-width: 1000px) {
+//   #course_wrap{ // The display & width 60% will need to change for smaller screens
+//     border-width: thin;
+//     border-spacing: 2px;
+//     border-style: solid;
+//     border-color: black;
+//     display:inline-block;
+//     background-color:white;
+//     width:49%;
+//     padding:1%;
+//     box-shadow: 5px 5px 2px #888888;
+//     margin: 0 auto 5px auto;
+//
+//   }
+// }
+
+#locality{
+  display:none;
+}
+
+#administrative_area_level_1{
+  display:none;
+}
+#hide_for_now{
+  display:none;
+}
+
+
+.course_details {
+  padding:1%;
+  border-width: thin;
+  border-spacing: 2px;
+  border-style: solid;
+  border-color: black;
+  box-shadow: 5px 5px 2px #888888;
+  margin: 30px auto;
+  width: 90%;
+
+  .field {
+    margin: 0 auto;
+    padding-top: 10px;
+    display: flex;
+
+    &:nth-child(even) {
+      background-color: lighten(#0032a1, 60%);
+    }
+
+    .field_name {
+      font-weight: bold;
+      width: 50%;
+      margin: 0 10px 10px;
+    }
+
+    .field_value {
+      width: 50%;
+      margin: 0 10px 10px;
+    }
+  }
+
+  .no_image {
+    margin-bottom: 20px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .call_to_action {
+    button {
+      display: block;
+	  margin: 30px auto 25px;
+    }
+  }
+}
+
+#purchase_modal {
+    .modal-title {
+        text-align: center;
+    }
+
+    .seats_purchase_summary {
+        margin: 10px 0 10px;
+        .row {
+            margin-top: 10px;
+        }
+        .seats_total {
+            .form-control {
+                border-radius: 4px;
+            }
+        }
+        .cost_summary {
+            .summary_label {
+                margin-bottom: 0;
+            }
+            .total_calc: {
+                font-style: italic;
+            }
+        }
+    }
+
+    .seats_controls {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        .add_seat {
+            display: block;
+        }
+    }
+
+    .seats_info {
+        padding: 5px;
+        .seats_form_header {
+            margin-bottom: 5px;
+            margin-right: 45px;
+            .seat_name {
+                padding-right: 0;
+            }
+            .seat_contact {
+                padding-left: -15px;
+            }
+        }
+        .seat_row {
+            &:nth-child(even) {
+              background-color: lighten(#0032a1, 60%);
+            }
+            padding-top: 5px;
+            padding-bottom: 5px;
+            .seat_name {
+                .seat_first {
+                    padding-right: 0;
+                    input {
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                    }
+                }
+                .seat_middle {
+                    padding-right: 0;
+                    padding-left: 0;
+                    input {
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                        border-left-width: 0;
+                        border-right-width: 0;
+                    }
+                }
+                .seat_last {
+                    padding-left: 0;
+                    input {
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                    }
+                }
+            }
+            .seat_contact {
+                padding-right: 0;
+                .seat_email {
+                    padding-right: 0;
+                    input {
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                    }
+                }
+                .seat_phone {
+                    padding-left: 0;
+                    input {
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                        border-left-width: 0;
+                    }
+                }
+
+            }
+            .delete_seat {
+                button {
+                    font-size: 21px;
+                    font-weight: 700;
+                    line-height: 1;
+                    color: red;
+                    text-shadow: 0 1px 0 #fff;
+                    background-color: inherit;
+                    border: none;
+
+                }
+            }
+        }
+    }
+
+    .creditcard {
+    }
+
+    .creditcard_form {
+        .row {
+            margin-top: 15px;   
+        }
+    }
+}
+
+#courseIndexOne {
+  background-color:white;
+  padding:100px 10px 10px 10px;
+}
+
+#courseIndexTwo {
+  margin: 0 auto;
+  background-color:white;
+  width:60%;
+}
+#courseCenter{
+  text-align: center;
+}
+#start_date{
+  text-align:center;
+}
+#end_date{
+  text-align:center;
+}
+#digg_pagination{
+  width:35%;
+}
+
+@media screen and (min-width: 992px) {
+    .creditcard_form_controls {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;     /* stack flex items vertically */
+        justify-content: center;    /* center items vertically, in this case */
+        align-items: center;        /* center items horizontally, in this case */
+        button {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        input[type="submit"] {
+            margin-top: 15px;
+        }
+    }
+}
+
+
+
+.card_block{
+  vertical-align: top;
+  display:inline-block;
+  //width:48%;
+  //background-color:yellow;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.card_edit_destroy{
+
+}
+.card_course_name{
+
+}
+
+
+
+.asd {
+  background:rgba(0,0,0,0);
+  border:none;
+}
+
+#examples a {
+  text-decoration: underline;
+}
+
+#geocomplete { 
+  width: 400px
+}
+#viewport {
+  width: 400px;
+}
+#formatted_address {
+  width:150px;
+}
+#locality{
+  display: none;
+}
+#administrative_area_level_1{
+  display: none;
+}
+#hide_for_now{
+  display:none;
+}
+#min_price{
+  text-align: center;
+}
+#max_price{
+  text-align: center;
+}
+
+.map_canvas {
+  width: 600px;
+  height: 400px;
+  margin: 10px 20px 10px 0;
+}
+
+#multiple li {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#map {
+ height: 400px;
+ width: 100%;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+#autocomplete{
+  width:300px;
+}

@@ -1,0 +1,46 @@
+<div class="content_wrapper">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>First name:</strong>
+    <%= @seat.first_name %>
+  </p>
+
+  <p>
+    <strong>Middle name:</strong>
+    <%= @seat.middle_name %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= @seat.last_name %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= @seat.email %>
+  </p>
+
+  <p>
+    <strong>Phone:</strong>
+    <%= @seat.phone %>
+  </p>
+
+  <p>
+    <strong>Id code:</strong>
+    <%= @seat.id_code %>
+  </p>
+
+  <p>
+    <strong>Course:</strong>
+    <%= @seat.course_id %>
+  </p>
+
+  <p>
+    <strong>User:</strong>
+    <%= @seat.user_id %>
+  </p>
+
+  <%= link_to 'Edit', edit_seat_path(@seat) %> |
+  <%= link_to 'Back', seats_path %>
+</div>

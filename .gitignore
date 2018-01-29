@@ -1,0 +1,32 @@
+# Ignore bundler config.
+/.bundle
+# Ignore all logfiles and tempfiles.
+/log
+/tmp
+/.env
+/.byebug_history
+db/test.sqlite3
+db/development.sqlite3
+images
+config/config.yml
+config/#database.yml
+
+public/system/images
+public/system/icons
+public/uploads
+public/log
+
+kale_start_script
+
+# Ignore application configuration
+/config/application.yml
+.DS_Store
+.swp
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
+
+shared/log/puma.stderr.log
+shared/log/puma.stdout.log
+shared/pids/puma.state

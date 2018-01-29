@@ -1,0 +1,191 @@
+$bootstrap_blue:  #337ab7;
+$font-stack:    Helvetica, sans-serif;
+$primary-color: white;
+
+.orange_links{
+  color:orange;
+  a {
+    color: orange;
+    }
+  &:visited {
+      color: orange;
+    }
+    &:hover {
+      color: blue;
+      text-decoration: none;
+    }
+    &:active {
+      color: orange;
+    }
+  }
+
+.orange_links_medium{
+  font-size: 20px;
+  color:orange;
+  a {
+    color: orange;
+    }
+  &:visited {
+      color: orange;
+    }
+  &:hover {
+    color: blue;
+    text-decoration: none;
+  }
+  &:active {
+    color: orange;
+  }
+}
+
+.static_page_p{
+  line-height:1.5;
+  font-size: 150%;
+  color:#939393;
+}
+
+
+
+.nav{ a{
+        font-weight: bold;
+        font-size: 1.2em !important;
+      }
+      &:hover{
+        color: blue !important;
+        text-decoration: none;
+      }
+
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5em !important;
+
+}
+.nav li{
+  padding-right:5px;
+}
+
+ul.nav a:hover { color: orange !important; }
+
+html {
+    background-color: white;
+    position: relative;
+    min-height: 100%;
+}
+body {
+    background-color: white;
+    margin: 0 0 100px; /* bottom = footer height */
+}
+footer {
+  text-align: center;
+    background-color:#f9f9f9;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    margin-top: 10%
+}
+
+.footer_links {
+  padding-left: 2px;
+  color: #a9a9a9;
+  font-size: 20px;
+    a {
+      color:red;
+    }
+    &:hover {
+        color:orange;
+        text-decoration: none;
+    }
+}
+
+
+body{
+  font: 100% $font-stack;
+  background-color: $primary-color;
+}
+.centeredtext{
+  text-align-last: center;
+}
+
+.content_wrapper {
+    background-color: white;
+    width:100%;
+    padding-left:15%;
+    padding-right:15%;
+    padding-top:10%;
+}
+
+.content_logo{
+  display:none;
+  // height:50px;
+  // padding-top: 10px;
+  // top:-10%;
+}
+
+@media screen and (min-width: 900px) {
+  .content_logo{
+    display:inline;
+    height:100px;
+    top:-10%;
+  }
+  .content_wrapper {
+      background-color: white;
+      width:100%;
+      padding-left:15%;
+      padding-right:15%;
+      padding-top:3%;
+  }
+}
+
+
+
+// http://mislav.github.io/will_paginate/
+.digg_pagination {
+  background: white;
+  cursor: default;
+  margin: 0 auto;
+  /* self-clearing method: */ }
+  .digg_pagination a, .digg_pagination span, .digg_pagination em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px; }
+  .digg_pagination .disabled {
+    color: #999999;
+    border: 1px solid #dddddd; }
+  .digg_pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    background: $bootstrap_blue;
+    color: white;
+    border: 1px solid $bootstrap_blue; }
+  .digg_pagination a {
+    text-decoration: none;
+    color: #105cb6;
+    border: 1px solid #9aafe5; }
+    .digg_pagination a:hover, .digg_pagination a:focus {
+      color: white;
+      background: $bootstrap_blue;
+      border-color: #000033; }
+  .digg_pagination .page_info {
+    background: $bootstrap_blue;
+    color: white;
+    padding: 0.4em 0.6em;
+    width: 22em;
+    margin-bottom: 0.3em;
+    text-align: center; }
+    .digg_pagination .page_info b {
+      color: #000033;
+      background: $bootstrap_blue;
+      padding: 0.1em 0.25em; }
+  .digg_pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  * html .digg_pagination {
+    height: 1%; }
+  *:first-child + html .digg_pagination {
+    overflow: hidden; }

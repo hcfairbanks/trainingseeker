@@ -1,0 +1,78 @@
+<div class="content_wrapper">
+  <p id="notice"><%= notice %></p>
+
+  <h1>Listing Users</h1>
+
+  <%= search_form_for @q do |f| %>
+    <%= f.label :email %>
+    <%= f.search_field :email %>
+    <%= f.label :id %>
+    <%= f.search_field :id %>
+    <%= f.check_box :is_approved %>
+    <%= f.label 'not approved?' %>
+    <%= f.submit %>
+  <% end %>
+  <br/>
+  <table>
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>ID</th>
+        <th>Email</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Dob</th>
+        <th>City</th>
+        <th>Province</th>
+        <th>Role</th>
+        <th>Approved?</th>
+        <th colspan="4"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @users.each do |user| %>
+        <tr>
+          <td valign='top'>
+            <% unless user.avatar_url.blank? %>
+             <%= image_tag(user.avatar.thumb) %><br/>
+            <% else %>
+              <img src="/site_images/no-image.png" alt="No Image" height="50px" >
+            <% end %>
+          </td>
+          <td><%= user.id %></td>
+          <td><%= user.email %></td>
+          <td><%= user.first_name %></td>
+          <td><%= user.last_name %></td>
+          <td><%= user.dob %></td>
+          <td><%= user.city %></td>
+          <td><%= user.province %></td>
+          <td><%= user.role.try(:name) %></td>
+          <td><%= user.is_approved %></td>
+          <% if can? :show, user %>
+            <td><%= link_to 'Show', user %></td>
+          <% end %>
+          <% if can? :update, user %>
+            <td><%= link_to 'Edit', edit_user_path(user) %></td>
+          <% end %>
+          <% if can? :update, user %>
+            <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <% end %>
+          <td>
+            <% unless user.is_approved or cannot? :approve, user %>
+                <%= link_to 'Approve', approve_user_path(user), method: :put, data: { confirm: 'Are you sure?' } %>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br/>
+
+  <br/>
+  <% if can? :new, :user %>
+    <%= link_to 'New User', new_user_path %>
+  <% end %>
+  <br/>
+  <%= will_paginate @user %>
+</div>

@@ -1,0 +1,24 @@
+
+
+<div class="content_wrapper">
+  <div id="center">
+  <h1 id="center">Contact us today.</h1>
+  <hr>
+  <p class="static_page_p">
+  Get In Touch With Us
+  We are here to answer any questions you may have. Reach out to us and we’ll respond as soon as we can.
+  Even if there is something you have always wanted to know and can’t find it on TrainingSeeker, let us know and we promise we’ll do our best to find it for you.
+  </p>
+
+
+  <%= form_for(@contact, url: '/contact') do |f| %>
+    <%= f.text_field :name, placeholder: "Your Name",class:"contact_form contact_form_height" %><br/>
+    <%= f.text_field :company_name, placeholder: "Company Name",class:"contact_form contact_form_height" %><br/>
+    <%= f.text_field :email, placeholder: "Email",class:"contact_form contact_form_height",required:"true" %><br/>
+    <%= f.text_field :phone, placeholder: "Phone Number",class:"contact_form contact_form_height" %><br/>
+    <%= f.text_area :comment, :id=>"commentArea", placeholder: "Comment",class:"contact_form", rows:"10",required:"true" %><br/>
+    <%= f.submit "Submit" %>
+  <% end %>
+  <br/>
+  </div>
+</div>

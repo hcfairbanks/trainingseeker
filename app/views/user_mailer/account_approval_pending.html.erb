@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Account pending approval</title>
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <style>
+      @media screen and (max-width: 600px) {
+        .fullwidth {
+          width: 100% !important;
+        }
+      }
+      @media screen and (max-width: 401px) {
+        .info {
+          font-size: 14px !important;
+          line-height: 21px !important; 
+          text-align: left !important;
+        }
+      }
+  </style>
+  <!--[if gte mso 12]>
+    <style>
+      td {
+        mso-line-height-rule: exactly; 
+      }
+    </style>
+  <![endif]-->
+  <body style="margin: 0; padding: 0;">
+    <table border="0" cellpadding="0" cellspacing="0" style="background-color: #ffffff;" width="100%">
+      <tr>
+        <td style="padding: 0 10px;">
+          <table width="600"
+                 style="background-color: #e7e7e7;"
+                 align="center" border="0" cellpadding="0" cellspacing="0" class="fullwidth">
+            <tr>
+              <td style="width: 1%;">
+                <img alt="TrainingSeeker" src="<%= @host %>/site_images/icon_float.png" style="display: inline; max-width: 32px;" />
+              </td>
+              <td style="color: #0032a1; font-weight: bold; font-size: 1.5em; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;">
+                TrainingSeeker
+              </td>
+            <tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 0 10px;">
+          <table width="600"
+                 align="center" border="0" cellpadding="0" cellspacing="0" class="fullwidth">
+            <tr>
+              <td class="headline" align="center" style="color: #0032a1; line-height: 32px; font-weight: bold; font-size: 18px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; text-transform: uppercase;">
+                Account Pending Approval
+              </td>
+            </tr>
+            <tr>
+              <td class="info" style="color: #777; line-height: 24px; font-size: 16px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;">
+				  Your account is pending approval. 
+              </td>
+            </tr>
+            <tr>
+              <td class="info" style="color: #777; line-height: 24px; font-size: 16px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;">
+                  
+                  You will receive an email from us when your account has been approved by an admin.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <table width="600"
+                   align="center" border="0" cellpadding="0" cellspacing="0" class="fullwidth">
+              <tr>
+                <td align="center" style="color: #0032a1; font-family: 'Helvetica Neue', Helvetica,Arial,sans-serif; font-size: 12px; padding-top: 40px;">
+                  <a href="<%= @host %>" style="color: #545154;"><%= @host %></a>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="color: #0032a1; font-family: 'Helvetica Neue', Helvetica,Arial,sans-serif; font-size: 12px; padding-top: 15px;">
+                  TrainingSeeker Inc. © 2017
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="color: #545154; 'Helvetica Neue', Helvetica,Arial,sans-serifeorgia, serif; font-size: 12px; padding: 15px 0;">
+                  <a target="_blank" href="https://www.facebook.com/trainingseeker/"><img alt="On facebook" src="<%= @host %>/site_images/icons/facebook_gray.png"></a>
+                  <a target="_blank" href="https://twitter.com/trainingseeker"><img alt="On twitter" src="<%= @host%>/site_images/icons/twitter_gray.png"></a>
+                  <a target="_blank" href="https://www.linkedin.com/company/trainingseeker"><img alt="On linkedin" src="/site_images/icons/linkedin_gray.png"></a>
+                  <a target="_blank" href="https://plus.google.com/107231071754424869173"><img alt="On google plus" src="<%= @host %>/site_images/icons/google_plus_gray.png"></a>
+                </td>
+              </tr>
+            </table>
+        </td>
+	  </tr>
+    </table>
+  </body>
+</html>

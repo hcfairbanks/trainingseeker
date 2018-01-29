@@ -1,0 +1,47 @@
+// Place all the styles related to the Providers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#communitiesbody{
+  background-color: white;
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#placards{
+  margin: 0 auto;
+  background-color:white;
+  width:90%;
+}
+.community_card{
+  border-width: thin;
+  border-spacing: 2px;
+  border-style: solid;
+  border-color: black;
+  box-shadow: 5px 5px 2px #888888;
+  background-color: white;
+  color: black;
+  height: 300px;
+  width: 200px;
+  padding: 10px;
+  margin: 20px;
+  display: inline-block;
+}
+
+.course_image_box{
+  height:75px;
+  border-width: thin;
+  border-spacing: 2px;
+  border-style: solid;
+  border-color: black;
+  box-shadow: 5px 5px 2px #888888;
+}
+
+.digg_pagination{
+  padding:0 auto;
+  width:30%;
+}
+
+#providers_show{
+  padding-top:6%;
+}

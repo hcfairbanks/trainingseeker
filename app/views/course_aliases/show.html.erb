@@ -1,0 +1,16 @@
+<div class="content_wrapper">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Course alias:</strong>
+    <%= @course_alias.course_alias %>
+  </p>
+
+  <p>
+    <strong>Course name:</strong>
+    <%= @course_alias.course_name_id %>
+  </p>
+
+  <%= link_to 'Edit', edit_course_alias_path(@course_alias) %> |
+  <%= link_to 'Back', course_aliases_path %>
+</div>

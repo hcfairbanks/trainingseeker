@@ -1,0 +1,1449 @@
+/* line 5, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/courses.scss */
+#course_wrap_show {
+  border-width: thin;
+  border-spacing: 2px;
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  width: 100%;
+  padding: 1%;
+  box-shadow: 5px 5px 2px #888888;
+  margin: 0 auto;
+}
+
+/* line 19, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/courses.scss */
+.card_block_show {
+  vertical-align: top;
+  display: inline-block;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* line 30, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/courses.scss */
+.course_image_box {
+  border-width: thin;
+  border-spacing: 2px;
+  border-style: solid;
+  border-color: black;
+  box-shadow: 5px 5px 2px #888888;
+}
+
+/* line 38, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/courses.scss */
+#course_wrap {
+  border-width: thin;
+  border-spacing: 2px;
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  width: 60%;
+  padding: 2%;
+  box-shadow: 5px 5px 2px #888888;
+  margin: 0 auto;
+}
+
+/* line 52, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/courses.scss */
+.card_block {
+  vertical-align: top;
+  display: inline-block;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* line 69, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/courses.scss */
+.asd {
+  background: transparent;
+  border: none;
+}
+
+/* line 74, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/courses.scss */
+#examples a {
+  text-decoration: underline;
+}
+
+/* line 78, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/courses.scss */
+#geocomplete {
+  width: 300px;
+}
+
+/* line 80, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/courses.scss */
+.map_canvas {
+  width: 600px;
+  height: 400px;
+  margin: 10px 20px 10px 0;
+}
+
+/* line 86, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/courses.scss */
+#multiple li {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* line 91, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/courses.scss */
+#map {
+  height: 50%;
+  width: 50%;
+}
+
+/* line 96, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/courses.scss */
+#map #infowindow-content {
+  display: inline;
+}
+
+/* line 100, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/courses.scss */
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+/* line 104, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/courses.scss */
+#infowindow-content {
+  display: none;
+}
+
+/* line 107, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/courses.scss */
+#autocomplete {
+  width: 300px;
+}
+/* line 1, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.navbar-fixed-top {
+  background-color: green;
+}
+
+/* line 5, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.navbar-default {
+  background-color: green;
+  border-color: #E7E7E7;
+}
+
+/* line 16, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.nav a {
+  font-weight: bold;
+  color: red;
+  font-size: 1.2em !important;
+}
+
+/* line 21, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5em !important;
+}
+
+/* line 28, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.nav li {
+  padding-right: 5px;
+}
+
+/* line 34, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+html {
+  background-color: white;
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 39, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+body {
+  background-color: white;
+  margin: 0 0 100px;
+  /* bottom = footer height */
+}
+
+/* line 43, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+footer {
+  text-align: center;
+  background-color: #f9f9f9;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  margin-top: 10%;
+}
+
+/* line 67, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.footer_links {
+  padding-left: 2px;
+  color: #a9a9a9;
+  font-size: 20px;
+}
+/* line 72, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.footer_links a {
+  color: red;
+}
+/* line 75, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.footer_links:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+/* line 86, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: white;
+}
+
+/* line 90, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.centeredtext {
+  text-align-last: center;
+}
+
+/* line 97, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination {
+  background: white;
+  cursor: default;
+  margin: 0 auto;
+  /* self-clearing method: */
+}
+
+/* line 102, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination a, .digg_pagination span, .digg_pagination em {
+  padding: 0.2em 0.5em;
+  display: block;
+  float: left;
+  margin-right: 1px;
+}
+
+/* line 107, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination .disabled {
+  color: #999999;
+  border: 1px solid #dddddd;
+}
+
+/* line 110, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background: #2e6ab1;
+  color: white;
+  border: 1px solid #2e6ab1;
+}
+
+/* line 116, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination a {
+  text-decoration: none;
+  color: #105cb6;
+  border: 1px solid #9aafe5;
+}
+
+/* line 120, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination a:hover, .digg_pagination a:focus {
+  color: white;
+  background: #6aa6ed;
+  border-color: #000033;
+}
+
+/* line 124, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination .page_info {
+  background: #2e6ab1;
+  color: white;
+  padding: 0.4em 0.6em;
+  width: 22em;
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+
+/* line 131, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination .page_info b {
+  color: #000033;
+  background: #6aa6ed;
+  padding: 0.1em 0.25em;
+}
+
+/* line 135, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 141, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+* html .digg_pagination {
+  height: 1%;
+}
+
+/* line 143, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+*:first-child + html .digg_pagination {
+  overflow: hidden;
+}
+/* line 4, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/providers.scss */
+#communitiesbody {
+  background-color: white;
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* line 10, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/providers.scss */
+.community_card {
+  border-width: thin;
+  border-spacing: 2px;
+  border-style: solid;
+  border-color: black;
+  box-shadow: 5px 5px 2px #888888;
+  background-color: white;
+  color: black;
+  height: 300px;
+  width: 200px;
+  padding: 10px;
+  margin: 20px;
+  display: inline-block;
+}
+/* line 1, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 35, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* Mobile first layout SmartMenus Core CSS (it's not recommended editing these rules)
+   You need this once per page no matter how many menu trees or different themes you use.
+-------------------------------------------------------------------------------------------*/
+
+
+.sm{position:relative;z-index:9999;}
+.sm,.sm ul,.sm li{display:block;list-style:none;margin:0;padding:0;line-height:normal;direction:ltr;text-align:left;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+.sm-rtl,.sm-rtl ul,.sm-rtl li{direction:rtl;text-align:right;}
+.sm>li>h1,.sm>li>h2,.sm>li>h3,.sm>li>h4,.sm>li>h5,.sm>li>h6{margin:0;padding:0;}
+.sm ul{display:none;}
+.sm li,.sm a{position:relative;}
+.sm a{display:block;}
+.sm a.disabled{cursor:not-allowed;}
+.sm:after{content:"\00a0";display:block;height:0;font:0px/0 serif;clear:both;visibility:hidden;overflow:hidden;}
+.sm,.sm *,.sm *:before,.sm *:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+.sm-simple {
+  border: 1px solid #bbbbbb;
+  background: white;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.sm-simple a, .sm-simple a:hover, .sm-simple a:focus, .sm-simple a:active {
+  padding: 13px 20px;
+  /* make room for the toggle button (sub indicator) */
+  padding-right: 58px;
+  color: #555555;
+  font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 17px;
+  text-decoration: none;
+}
+.sm-simple a.current {
+  background: #555555;
+  color: white;
+}
+.sm-simple a.disabled {
+  color: #cccccc;
+}
+.sm-simple a span.sub-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: auto;
+  right: 4px;
+  width: 34px;
+  height: 34px;
+  overflow: hidden;
+  font: bold 14px/34px monospace !important;
+  text-align: center;
+  text-shadow: none;
+  background: rgba(0, 0, 0, 0.08);
+}
+.sm-simple a.highlighted span.sub-arrow:before {
+  display: block;
+  content: '-';
+}
+.sm-simple li {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.sm-simple > li:first-child {
+  border-top: 0;
+}
+.sm-simple ul {
+  background: rgba(179, 179, 179, 0.1);
+}
+.sm-simple ul a, .sm-simple ul a:hover, .sm-simple ul a:focus, .sm-simple ul a:active {
+  font-size: 14px;
+  border-left: 8px solid transparent;
+}
+.sm-simple ul ul a,
+.sm-simple ul ul a:hover,
+.sm-simple ul ul a:focus,
+.sm-simple ul ul a:active {
+  border-left: 16px solid transparent;
+}
+.sm-simple ul ul ul a,
+.sm-simple ul ul ul a:hover,
+.sm-simple ul ul ul a:focus,
+.sm-simple ul ul ul a:active {
+  border-left: 24px solid transparent;
+}
+.sm-simple ul ul ul ul a,
+.sm-simple ul ul ul ul a:hover,
+.sm-simple ul ul ul ul a:focus,
+.sm-simple ul ul ul ul a:active {
+  border-left: 32px solid transparent;
+}
+.sm-simple ul ul ul ul ul a,
+.sm-simple ul ul ul ul ul a:hover,
+.sm-simple ul ul ul ul ul a:focus,
+.sm-simple ul ul ul ul ul a:active {
+  border-left: 40px solid transparent;
+}
+
+@media (min-width: 768px) {
+  /* Switch to desktop layout
+  -----------------------------------------------
+     These transform the menu tree from
+     collapsible to desktop (navbar + dropdowns)
+  -----------------------------------------------*/
+  /* start... (it's not recommended editing these rules) */
+  .sm-simple ul {
+    position: absolute;
+    width: 12em;
+  }
+
+  .sm-simple li {
+    float: left;
+  }
+
+  .sm-simple.sm-rtl li {
+    float: right;
+  }
+
+  .sm-simple ul li, .sm-simple.sm-rtl ul li, .sm-simple.sm-vertical li {
+    float: none;
+  }
+
+  .sm-simple a {
+    white-space: nowrap;
+  }
+
+  .sm-simple ul a, .sm-simple.sm-vertical a {
+    white-space: normal;
+  }
+
+  .sm-simple .sm-nowrap > li > a, .sm-simple .sm-nowrap > li > :not(ul) a {
+    white-space: nowrap;
+  }
+
+  /* ...end */
+  .sm-simple {
+    background: white;
+  }
+  .sm-simple a, .sm-simple a:hover, .sm-simple a:focus, .sm-simple a:active, .sm-simple a.highlighted {
+    padding: 11px 20px;
+    color: #555555;
+  }
+  .sm-simple a:hover, .sm-simple a:focus, .sm-simple a:active, .sm-simple a.highlighted {
+    background: #eeeeee;
+  }
+  .sm-simple a.current {
+    background: #555555;
+    color: white;
+  }
+  .sm-simple a.disabled {
+    background: white;
+    color: #cccccc;
+  }
+  .sm-simple a.has-submenu {
+    padding-right: 32px;
+  }
+  .sm-simple a span.sub-arrow {
+    top: 50%;
+    margin-top: -8px;
+    right: 20px;
+    width: 8px;
+    height: 16px;
+    font: 14px/16px monospace !important;
+    background: transparent;
+  }
+  .sm-simple a.highlighted span.sub-arrow:before {
+    display: none;
+  }
+  .sm-simple > li {
+    border-top: 0;
+    border-left: 1px solid #eeeeee;
+  }
+  .sm-simple > li:first-child {
+    border-left: 0;
+  }
+  .sm-simple ul {
+    border: 1px solid #bbbbbb;
+    background: white;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  .sm-simple ul a {
+    border: 0 !important;
+  }
+  .sm-simple ul a.has-submenu {
+    padding-right: 20px;
+  }
+  .sm-simple ul a span.sub-arrow {
+    right: auto;
+    margin-left: -12px;
+  }
+  .sm-simple ul > li {
+    border-left: 0;
+    border-top: 1px solid #eeeeee;
+  }
+  .sm-simple ul > li:first-child {
+    border-top: 0;
+  }
+  .sm-simple span.scroll-up,
+  .sm-simple span.scroll-down {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    overflow: hidden;
+    background: white;
+    height: 20px;
+  }
+  .sm-simple span.scroll-up-arrow, .sm-simple span.scroll-down-arrow {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 8px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #555555 transparent;
+  }
+  .sm-simple span.scroll-down-arrow {
+    top: 6px;
+    border-style: solid dashed dashed dashed;
+    border-color: #555555 transparent transparent transparent;
+  }
+  .sm-simple.sm-rtl a.has-submenu {
+    padding-right: 20px;
+    padding-left: 32px;
+  }
+  .sm-simple.sm-rtl a span.sub-arrow {
+    right: auto;
+    left: 20px;
+  }
+  .sm-simple.sm-rtl.sm-vertical a.has-submenu {
+    padding: 11px 20px;
+  }
+  .sm-simple.sm-rtl.sm-vertical a span.sub-arrow {
+    right: 20px;
+    margin-right: -12px;
+  }
+  .sm-simple.sm-rtl > li:first-child {
+    border-left: 1px solid #eeeeee;
+  }
+  .sm-simple.sm-rtl > li:last-child {
+    border-left: 0;
+  }
+  .sm-simple.sm-rtl ul a.has-submenu {
+    padding: 11px 20px;
+  }
+  .sm-simple.sm-rtl ul a span.sub-arrow {
+    right: 20px;
+    margin-right: -12px;
+  }
+  .sm-simple.sm-vertical a span.sub-arrow {
+    right: auto;
+    margin-left: -12px;
+  }
+  .sm-simple.sm-vertical li {
+    border-left: 0;
+    border-top: 1px solid #eeeeee;
+  }
+  .sm-simple.sm-vertical > li:first-child {
+    border-top: 0;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+
+
+
+ */
+/* line 1, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.navbar-fixed-top {
+  background-color: green;
+}
+
+/* line 5, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.navbar-default {
+  background-color: green;
+  border-color: #E7E7E7;
+}
+
+/* line 16, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.nav a {
+  font-weight: bold;
+  color: red;
+  font-size: 1.2em !important;
+}
+
+/* line 21, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5em !important;
+}
+
+/* line 28, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.nav li {
+  padding-right: 5px;
+}
+
+/* line 34, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+html {
+  background-color: white;
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 39, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+body {
+  background-color: white;
+  margin: 0 0 100px;
+  /* bottom = footer height */
+}
+
+/* line 43, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+footer {
+  text-align: center;
+  background-color: #f9f9f9;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  margin-top: 10%;
+}
+
+/* line 67, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.footer_links {
+  padding-left: 2px;
+  color: #a9a9a9;
+  font-size: 20px;
+}
+/* line 72, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.footer_links a {
+  color: red;
+}
+/* line 75, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.footer_links:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+/* line 86, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: white;
+}
+
+/* line 90, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.centeredtext {
+  text-align-last: center;
+}
+
+/* line 97, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination {
+  background: white;
+  cursor: default;
+  margin: 0 auto;
+  /* self-clearing method: */
+}
+
+/* line 102, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination a, .digg_pagination span, .digg_pagination em {
+  padding: 0.2em 0.5em;
+  display: block;
+  float: left;
+  margin-right: 1px;
+}
+
+/* line 107, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination .disabled {
+  color: #999999;
+  border: 1px solid #dddddd;
+}
+
+/* line 110, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background: #2e6ab1;
+  color: white;
+  border: 1px solid #2e6ab1;
+}
+
+/* line 116, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination a {
+  text-decoration: none;
+  color: #105cb6;
+  border: 1px solid #9aafe5;
+}
+
+/* line 120, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination a:hover, .digg_pagination a:focus {
+  color: white;
+  background: #6aa6ed;
+  border-color: #000033;
+}
+
+/* line 124, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination .page_info {
+  background: #2e6ab1;
+  color: white;
+  padding: 0.4em 0.6em;
+  width: 22em;
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+
+/* line 131, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination .page_info b {
+  color: #000033;
+  background: #6aa6ed;
+  padding: 0.1em 0.25em;
+}
+
+/* line 135, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+.digg_pagination:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 141, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+* html .digg_pagination {
+  height: 1%;
+}
+
+/* line 143, /home/harry/Desktop/git/trainingseeker_beta/app/assets/stylesheets/custom.scss */
+*:first-child + html .digg_pagination {
+  overflow: hidden;
+}
+
+/* there is a conflict here */
+/* line 1, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/core.scss */
+.select2-container {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  vertical-align: middle;
+}
+/* line 1, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_single.scss */
+.select2-container .select2-selection--single {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  height: 28px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* line 12, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_single.scss */
+.select2-container .select2-selection--single .select2-selection__rendered {
+  display: block;
+  padding-left: 8px;
+  padding-right: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 22, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_single.scss */
+.select2-container .select2-selection--single .select2-selection__clear {
+  position: relative;
+}
+/* line 29, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_single.scss */
+.select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered {
+  padding-right: 8px;
+  padding-left: 20px;
+}
+/* line 1, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_multiple.scss */
+.select2-container .select2-selection--multiple {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  min-height: 32px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* line 12, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_multiple.scss */
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+  display: inline-block;
+  overflow: hidden;
+  padding-left: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 21, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_multiple.scss */
+.select2-container .select2-search--inline {
+  float: left;
+}
+/* line 24, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_multiple.scss */
+.select2-container .select2-search--inline .select2-search__field {
+  box-sizing: border-box;
+  border: none;
+  font-size: 100%;
+  margin-top: 5px;
+  padding: 0;
+}
+/* line 31, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_multiple.scss */
+.select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* line 1, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_dropdown.scss */
+.select2-dropdown {
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  left: -100000px;
+  width: 100%;
+  z-index: 1051;
+}
+
+/* line 19, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_dropdown.scss */
+.select2-results {
+  display: block;
+}
+
+/* line 23, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_dropdown.scss */
+.select2-results__options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 29, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_dropdown.scss */
+.select2-results__option {
+  padding: 6px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* line 35, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_dropdown.scss */
+.select2-results__option[aria-selected] {
+  cursor: pointer;
+}
+
+/* line 40, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_dropdown.scss */
+.select2-container--open .select2-dropdown {
+  left: 0;
+}
+
+/* line 44, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_dropdown.scss */
+.select2-container--open .select2-dropdown--above {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* line 50, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_dropdown.scss */
+.select2-container--open .select2-dropdown--below {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* line 56, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_dropdown.scss */
+.select2-search--dropdown {
+  display: block;
+  padding: 4px;
+}
+/* line 60, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_dropdown.scss */
+.select2-search--dropdown .select2-search__field {
+  padding: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* line 65, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_dropdown.scss */
+.select2-search--dropdown .select2-search__field::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+/* line 70, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/_dropdown.scss */
+.select2-search--dropdown.select2-search--hide {
+  display: none;
+}
+
+/* line 15, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/core.scss */
+.select2-close-mask {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  z-index: 99;
+  background-color: #fff;
+  filter: alpha(opacity=0);
+}
+
+/* line 36, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/core.scss */
+.select2-hidden-accessible {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+}
+
+/* line 1, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_single.scss */
+.select2-container--default .select2-selection--single {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+/* line 6, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_single.scss */
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #444;
+  line-height: 28px;
+}
+/* line 11, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_single.scss */
+.select2-container--default .select2-selection--single .select2-selection__clear {
+  cursor: pointer;
+  float: right;
+  font-weight: bold;
+}
+/* line 17, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_single.scss */
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: #999;
+}
+/* line 21, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_single.scss */
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 26px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 20px;
+}
+/* line 31, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_single.scss */
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #888 transparent transparent transparent;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  height: 0;
+  left: 50%;
+  margin-left: -4px;
+  margin-top: -2px;
+  position: absolute;
+  top: 50%;
+  width: 0;
+}
+/* line 52, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_single.scss */
+.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__clear {
+  float: left;
+}
+/* line 56, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_single.scss */
+.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow {
+  left: 1px;
+  right: auto;
+}
+/* line 64, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_single.scss */
+.select2-container--default.select2-container--disabled .select2-selection--single {
+  background-color: #eee;
+  cursor: default;
+}
+/* line 68, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_single.scss */
+.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear {
+  display: none;
+}
+/* line 77, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_single.scss */
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent #888 transparent;
+  border-width: 0 4px 5px 4px;
+}
+/* line 1, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_multiple.scss */
+.select2-container--default .select2-selection--multiple {
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: text;
+}
+/* line 7, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_multiple.scss */
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0 5px;
+  width: 100%;
+}
+/* line 14, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_multiple.scss */
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+  list-style: none;
+}
+/* line 19, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_multiple.scss */
+.select2-container--default .select2-selection--multiple .select2-selection__placeholder {
+  color: #999;
+  margin-top: 5px;
+  float: left;
+}
+/* line 27, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_multiple.scss */
+.select2-container--default .select2-selection--multiple .select2-selection__clear {
+  cursor: pointer;
+  float: right;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+/* line 35, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_multiple.scss */
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #e4e4e4;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: default;
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding: 0 5px;
+}
+/* line 49, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_multiple.scss */
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: #999;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 2px;
+}
+/* line 58, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_multiple.scss */
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+  color: #333;
+}
+/* line 66, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_multiple.scss */
+.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice, .select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__placeholder, .select2-container--default[dir="rtl"] .select2-selection--multiple .select2-search--inline {
+  float: right;
+}
+/* line 70, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_multiple.scss */
+.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice {
+  margin-left: 5px;
+  margin-right: auto;
+}
+/* line 75, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_multiple.scss */
+.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove {
+  margin-left: 2px;
+  margin-right: auto;
+}
+/* line 83, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_multiple.scss */
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border: solid black 1px;
+  outline: 0;
+}
+/* line 90, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_multiple.scss */
+.select2-container--default.select2-container--disabled .select2-selection--multiple {
+  background-color: #eee;
+  cursor: default;
+}
+/* line 95, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/_multiple.scss */
+.select2-container--default.select2-container--disabled .select2-selection__choice__remove {
+  display: none;
+}
+/* line 6, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/layout.scss */
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--single, .select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+/* line 13, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/layout.scss */
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/* line 20, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/layout.scss */
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 1px solid #aaa;
+}
+/* line 26, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/layout.scss */
+.select2-container--default .select2-search--inline .select2-search__field {
+  background: transparent;
+  border: none;
+  outline: 0;
+  box-shadow: none;
+  -webkit-appearance: textfield;
+}
+/* line 35, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/layout.scss */
+.select2-container--default .select2-results > .select2-results__options {
+  max-height: 200px;
+  overflow-y: auto;
+}
+/* line 41, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/layout.scss */
+.select2-container--default .select2-results__option[role=group] {
+  padding: 0;
+}
+/* line 45, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/layout.scss */
+.select2-container--default .select2-results__option[aria-disabled=true] {
+  color: #999;
+}
+/* line 49, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/layout.scss */
+.select2-container--default .select2-results__option[aria-selected=true] {
+  background-color: #ddd;
+}
+/* line 53, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/layout.scss */
+.select2-container--default .select2-results__option .select2-results__option {
+  padding-left: 1em;
+}
+/* line 56, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/layout.scss */
+.select2-container--default .select2-results__option .select2-results__option .select2-results__group {
+  padding-left: 0;
+}
+/* line 60, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/layout.scss */
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option {
+  margin-left: -1em;
+  padding-left: 2em;
+}
+/* line 64, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/layout.scss */
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+  margin-left: -2em;
+  padding-left: 3em;
+}
+/* line 68, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/layout.scss */
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+  margin-left: -3em;
+  padding-left: 4em;
+}
+/* line 72, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/layout.scss */
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+  margin-left: -4em;
+  padding-left: 5em;
+}
+/* line 76, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/layout.scss */
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+  margin-left: -5em;
+  padding-left: 6em;
+}
+/* line 87, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/layout.scss */
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #5897fb;
+  color: white;
+}
+/* line 92, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/default/layout.scss */
+.select2-container--default .select2-results__group {
+  cursor: default;
+  display: block;
+  padding: 6px;
+}
+
+/* line 1, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_single.scss */
+.select2-container--classic .select2-selection--single {
+  background-color: #f7f7f7;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  outline: 0;
+  background-image: -webkit-linear-gradient(top, white 50%, #eeeeee 100%);
+  background-image: -o-linear-gradient(top, white 50%, #eeeeee 100%);
+  background-image: linear-gradient(to bottom, white 50%, #eeeeee 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0);
+}
+/* line 11, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_single.scss */
+.select2-container--classic .select2-selection--single:focus {
+  border: 1px solid #5897fb;
+}
+/* line 15, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_single.scss */
+.select2-container--classic .select2-selection--single .select2-selection__rendered {
+  color: #444;
+  line-height: 28px;
+}
+/* line 20, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_single.scss */
+.select2-container--classic .select2-selection--single .select2-selection__clear {
+  cursor: pointer;
+  float: right;
+  font-weight: bold;
+  margin-right: 10px;
+}
+/* line 27, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_single.scss */
+.select2-container--classic .select2-selection--single .select2-selection__placeholder {
+  color: #999;
+}
+/* line 31, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_single.scss */
+.select2-container--classic .select2-selection--single .select2-selection__arrow {
+  background-color: #ddd;
+  border: none;
+  border-left: 1px solid #aaa;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  height: 26px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 20px;
+  background-image: -webkit-linear-gradient(top, #eeeeee 50%, #cccccc 100%);
+  background-image: -o-linear-gradient(top, #eeeeee 50%, #cccccc 100%);
+  background-image: linear-gradient(to bottom, #eeeeee 50%, #cccccc 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFCCCCCC', GradientType=0);
+}
+/* line 50, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_single.scss */
+.select2-container--classic .select2-selection--single .select2-selection__arrow b {
+  border-color: #888 transparent transparent transparent;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  height: 0;
+  left: 50%;
+  margin-left: -4px;
+  margin-top: -2px;
+  position: absolute;
+  top: 50%;
+  width: 0;
+}
+/* line 71, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_single.scss */
+.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__clear {
+  float: left;
+}
+/* line 75, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_single.scss */
+.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__arrow {
+  border: none;
+  border-right: 1px solid #aaa;
+  border-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  left: 1px;
+  right: auto;
+}
+/* line 90, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_single.scss */
+.select2-container--classic.select2-container--open .select2-selection--single {
+  border: 1px solid #5897fb;
+}
+/* line 93, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_single.scss */
+.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow {
+  background: transparent;
+  border: none;
+}
+/* line 98, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_single.scss */
+.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent #888 transparent;
+  border-width: 0 4px 5px 4px;
+}
+/* line 106, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_single.scss */
+.select2-container--classic.select2-container--open.select2-container--above .select2-selection--single {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-image: -webkit-linear-gradient(top, white 0%, #eeeeee 50%);
+  background-image: -o-linear-gradient(top, white 0%, #eeeeee 50%);
+  background-image: linear-gradient(to bottom, white 0%, #eeeeee 50%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0);
+}
+/* line 116, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_single.scss */
+.select2-container--classic.select2-container--open.select2-container--below .select2-selection--single {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-image: -webkit-linear-gradient(top, #eeeeee 50%, white 100%);
+  background-image: -o-linear-gradient(top, #eeeeee 50%, white 100%);
+  background-image: linear-gradient(to bottom, #eeeeee 50%, white 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFFFFFFF', GradientType=0);
+}
+/* line 1, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_multiple.scss */
+.select2-container--classic .select2-selection--multiple {
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: text;
+  outline: 0;
+}
+/* line 11, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_multiple.scss */
+.select2-container--classic .select2-selection--multiple:focus {
+  border: 1px solid #5897fb;
+}
+/* line 15, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_multiple.scss */
+.select2-container--classic .select2-selection--multiple .select2-selection__rendered {
+  list-style: none;
+  margin: 0;
+  padding: 0 5px;
+}
+/* line 21, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_multiple.scss */
+.select2-container--classic .select2-selection--multiple .select2-selection__clear {
+  display: none;
+}
+/* line 25, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_multiple.scss */
+.select2-container--classic .select2-selection--multiple .select2-selection__choice {
+  background-color: #e4e4e4;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: default;
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding: 0 5px;
+}
+/* line 40, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_multiple.scss */
+.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove {
+  color: #888;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 2px;
+}
+/* line 49, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_multiple.scss */
+.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover {
+  color: #555;
+}
+/* line 57, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_multiple.scss */
+.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice {
+  float: right;
+}
+/* line 61, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_multiple.scss */
+.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice {
+  margin-left: 5px;
+  margin-right: auto;
+}
+/* line 66, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_multiple.scss */
+.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove {
+  margin-left: 2px;
+  margin-right: auto;
+}
+/* line 74, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_multiple.scss */
+.select2-container--classic.select2-container--open .select2-selection--multiple {
+  border: 1px solid #5897fb;
+}
+/* line 79, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_multiple.scss */
+.select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+/* line 87, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/_multiple.scss */
+.select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/* line 9, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/layout.scss */
+.select2-container--classic .select2-search--dropdown .select2-search__field {
+  border: 1px solid #aaa;
+  outline: 0;
+}
+/* line 16, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/layout.scss */
+.select2-container--classic .select2-search--inline .select2-search__field {
+  outline: 0;
+  box-shadow: none;
+}
+/* line 22, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/layout.scss */
+.select2-container--classic .select2-dropdown {
+  background-color: white;
+  border: 1px solid transparent;
+}
+/* line 27, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/layout.scss */
+.select2-container--classic .select2-dropdown--above {
+  border-bottom: none;
+}
+/* line 31, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/layout.scss */
+.select2-container--classic .select2-dropdown--below {
+  border-top: none;
+}
+/* line 35, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/layout.scss */
+.select2-container--classic .select2-results > .select2-results__options {
+  max-height: 200px;
+  overflow-y: auto;
+}
+/* line 41, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/layout.scss */
+.select2-container--classic .select2-results__option[role=group] {
+  padding: 0;
+}
+/* line 45, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/layout.scss */
+.select2-container--classic .select2-results__option[aria-disabled=true] {
+  color: grey;
+}
+/* line 50, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/layout.scss */
+.select2-container--classic .select2-results__option--highlighted[aria-selected] {
+  background-color: #3875d7;
+  color: white;
+}
+/* line 55, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/layout.scss */
+.select2-container--classic .select2-results__group {
+  cursor: default;
+  display: block;
+  padding: 6px;
+}
+/* line 61, /home/harry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-select2-4.0.3/app/assets/stylesheets/select2/theme/classic/layout.scss */
+.select2-container--classic.select2-container--open .select2-dropdown {
+  border-color: #5897fb;
+}

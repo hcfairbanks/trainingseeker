@@ -1,0 +1,148 @@
+
+<div id="map" ></div>
+
+<img id="preview_image"  height="200" width="200" style="display:none;">
+<% unless @course.avatar.blank? %>
+  <%= image_tag(@course.avatar.avatar, class: "course_image_box") %>
+<% else %>
+  <img height="50px" id="initial_course_avatar" >
+ <!-- src="/images/no-image.png" -->
+<% end %>
+<% unless @course.photos.blank? %>
+  <% @course.photos.each  do | photo | %>
+    <%= image_tag(File.join(root_url, photo.id.to_s, "photo", "pic", photo.id.to_s,"pic","serve_image")) %>
+    <br/>
+  <% end %>
+<% end %>
+
+<div class="field">
+  <input id="pac-input" type="text" placeholder="Enter a location">
+</div>
+
+<%= form_for(course) do |f| %>
+  <% if course.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(course.errors.count, "error") %> prohibited this course from being saved:</h2>
+
+      <ul>
+      <% course.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :province %>
+    <%= raw @province_selector %>
+  </div>
+
+  <div class="field">
+    <%= f.label :city %>
+    <input class="field" name="course[city]" id="locality"  value="<%= @course.city %>"  readonly="<%= @disbaled %>"  required></input>
+  </div>
+
+
+<div class="field">
+  <%= f.label :latitude %>
+    <%= f.text_field :latitude, id:"course[latitude]" %>
+  <% #= raw @latitude %>
+</div>
+
+<div class="field">
+  <%= f.label :longitude %>
+  <%= f.text_field :longitude, id:"course[longitude]"%>
+  <% #= raw @longitude %>
+</div>
+
+
+  <!-- <div class="field">
+    Street Number: <input class="field" id="street_number" disabled="true"></input>
+    <br/>
+    Street Name: <input class="field" id="route" disabled="true"></input>
+  </div> -->
+
+  <!-- <div class="field">
+    Postal code: <input class="field" id="postal_code" name="course[postal_code]" ></input>
+  </div> -->
+
+  <div class="field">
+    <%= f.label :address_line_1 %>
+    <%= f.text_field :address_line_1, id:"street_number", disabled: @disabled %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address_line_2 %>
+    <%= f.text_field :address_line_2, id:"route", disabled: @disabled %>
+  </div>
+
+  <div class="field">
+    <%= f.label :postal_code %>
+    <%= f.text_field :postal_code, id:"postal_code" ,pattern:"[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]", disabled: @disabled %>
+    <!-- http://html5pattern.com/Postal_Codes -->
+  </div>
+
+
+  <div class="field">
+    <%= f.label :avatar %>
+    <%= f.file_field :avatar , id:"course[avatar]", :onchange => "preview();", disabled: @disabled%>
+  </div>
+
+  <div class="field">
+    <%= f.label :availability %>
+    <%= f.number_field :availability, id:"course[availability]", style:"width:100px;", min:"1", step:"1", disabled: @disabled %>
+  </div>
+
+  <div class="field">
+    <%= f.label :start_date %>
+    <%= f.date_field :start_date, id:"course[start_date]", required:"true" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :start_time %>
+    <%= f.time_field :start_time, id:"course[start_time]", required:"true" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :end_date %>
+    <%= f.date_field :end_date, id:"course[end_date]", disabled: @disabled %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price %>: $
+    <%= f.number_field :price, id:"course[price]", style:"width:100px;", min:"0.00", step:"0.01", value: number_with_precision(@course.price, precision: 2), disabled: @disabled %>
+  </div>
+
+
+
+<% # For when we get galleries %>
+<!--  <div class="field"> -->
+    <%#= f.label :pic %><!--<br> -->
+    <%#= f.file_field :pic, multiple: true, name: "post[photos_attributes][][pic]", :onchange => "preview(this);" %>
+<!--  </div> -->
+
+
+  <div class="field">
+    <%= f.label :course_name_id %><br>
+    <%= f.collection_select(:course_name_id, CourseName.all, :id, :name,{include_hidden: false, prompt:"Select a course"}, {id:"course[course_name]", style:"width: 30%; display:block;", class: 'en', multiple: false, disabled: "#{@disabled}",required:'true'}) %>
+    <% # f.collection_select(:course_name_id, CourseName.all, :id, :name,{include_hidden: false, include_blank: true}, {style:"width: 30%; display:block;", class: 'en', multiple: false}) %>
+  </div>
+
+
+  <!-- TODO Authorization fixes, everywhere-->
+  <% if can? :set_provider, Course %>
+    <div class="field">
+      <%= f.label :provider %><br>
+      <%= f.collection_select(:provider_id, Provider.all, :id, :name,{include_hidden: false}, {style:"width: 10%; display:block;", class: 'en', multiple: false}) %>
+    </div>
+  <% else %>
+    <div class="field">
+      <%= f.label :provider %><br>
+      <p><%= current_user.provider.name %></p>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
